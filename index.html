@@ -1,0 +1,152 @@
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>Hello World! --- SPECIAL's Start Page</title>
+	<link rel="stylesheet" type="text/css" media="screen"  href="./static/css/style.css" />
+	<link rel="shortcut icon" href="./static/img/favicon.ico" />
+
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+	<title>Ball Pool</title>
+	<style>
+		body {
+			overflow: hidden;
+			background-color: #000000;
+		}
+	</style>
+
+
+
+</head>
+<body>
+	<div id="Root">
+		<div style="float: right">
+			<a href="http://www.google.com/" target="_self">En_Google</a>&nbsp; 
+			<a href="http://aimm.ixiezi.com" target="_self">Aimm</a>&nbsp; 
+			<a href="http://prototype-tech.taobao.com/" target="_self">Taobao</a>
+		</div>
+
+		<strong style="color: #999">
+			<img src="./static/img/icon.png" align="absmiddle" style="margin-top: -4px;" /> SPECIAL's Start Page
+		</strong>
+
+		<div class="sep"></div>
+		<div class="column">
+			<div class="column_title">NEWS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; </div>
+			<ul class="nav">
+				<li><img src="./static/img/star.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.163.com/" target="_self">网易</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<div class="column_title">TECHNOLOGY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </div>
+			<ul class="nav">
+				<li><img src="./static/img/retweet.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://digg.com/news/technology/media/recent" target="_self">DIGG</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<div class="column_title">OPEN SOURCE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </div>
+			<ul class="nav">
+				<li><img src="./static/img/heart.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.oschina.net/" target="_self">开源中国</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<div class="column_title">FEED &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+			<ul class="nav">
+				<li><img src="./static/img/app.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;
+					<a href="http://xianguo.com/reader#PageMgr.goAllFeed(true)" target="_self">鲜果</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="sep"></div>
+
+		<!--Search Start-->
+
+		<center>
+			<form action="http://www.baidu.com/baidu" target="_self">
+				<input name=tn type=hidden value=baidu>
+				<input type="text" name=word id="baidu" class="sl" />
+				<input type="submit" value="Baidu  Search" class="super normal button" />
+			</form>
+		</center>
+
+		<center>
+			<form target="_self" method="get" action="http://www.google.com/search">
+				<input type="hidden" name="forid" value="1" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="hidden" name="hl" value="en-US" />
+				<input type="text" name="q" id="google" class="sl" />
+				<input type="submit" value="Google Search" class="super normal button" />
+			</form>
+		</center>
+
+		<div class="clear"></div>
+		<div class="sep"></div>
+
+		<center>
+		    <form name="frmSearch" method="post" action="http://www.alldatasheet.com/view.jsp" onsubmit="return InputCheck(frmSearch,1)">
+		        <td>
+		        <font color="#2E3192" size="2"><b>All DataSheet</b></font> 
+		        <select name="sField">
+		            <option value="1">Included</option>
+		            <option value="2">Starts With</option>
+		            <option value="3">End</option>
+		    
+		            <option value="4" selected>match</option>
+		        </select>
+		        <input size="18" name="sSearchword" value="">
+		        <input type="hidden" name="seekcls" value="">
+		        <input type="submit" value="DataSheet Search" class="super normal button"></td>
+		    </form>
+		</center>
+
+		<center>
+		    <div class="menu2-index">
+		        <form   id="myfrm"  name="myfrm" action="http://www.datasheetdir.com/search.php" method="post">
+		        <font color="#2E3192" size="2"><b >DataSheet Dir</b></font> 
+		        <select name="searchmethod" >
+		            <option value="1">Starts with</option>
+		            <option value="2">Contains</option>
+		    
+		            <option value="3">Ends with</option>
+		        </select>
+		        <input  size="18"  name="part" value="">  
+		        <button id="search" type="button" value="Search" class="super normal button" onclick="jsSubmit();" >DataSheet Search</button>
+		    </div>
+		</center>
+		<!--Search End-->
+
+		<div class="clear"></div>
+		<div class="sep"></div>
+
+
+
+	<div id="canvas"></div>
+
+	<script src="./js/protoclass.js"></script>
+	<script src='./js/box2d.js'></script>
+
+	<script src='./js/Main.js'></script>
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-86951-7");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+
+
+
+
+
+
+
+	</div>
+	<div id="Bottom">&copy; 2011-Long After, SPECIAL's Start Page<br />Powered by Pajoke</div>
+</body>
+</html>
