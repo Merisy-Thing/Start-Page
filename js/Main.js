@@ -67,7 +67,7 @@ function init() {
 
 function play() {
 
-	setInterval( loop, 1000 / 20 );
+	setInterval( loop, 1000 / 40 );
 }
 
 function reset() {
