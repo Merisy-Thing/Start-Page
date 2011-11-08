@@ -125,7 +125,6 @@
 		            <option value="1">Included</option>
 		            <option value="2">Starts With</option>
 		            <option value="3">End</option>
-		    
 		            <option value="4" selected>match</option>
 		        </select>
 		        <input size="18" name="sSearchword" value="">
@@ -135,8 +134,7 @@
 		</center>
 
 		<center>
-		    <div class="menu2-index">
-		        <form   id="myfrm"  name="myfrm" action="http://www.datasheetdir.com/search.php" method="post">
+		    <form   id="myfrm"  name="myfrm" action="http://www.datasheetdir.com/search.php" method="post">
 		        <font color="#2E3192" size="2"><b >DataSheet Dir</b></font> 
 		        <select name="searchmethod" >
 		            <option value="1">Starts with</option>
@@ -146,8 +144,21 @@
 		        </select>
 		        <input  size="18"  name="part" value="">  
 		        <button id="search" type="button" value="Search" class="super normal button" onclick="jsSubmit();" >DataSheet Search</button>
-		    </div>
+			</form>
 		</center>
+
+		<center>
+			<form id="search" action="http://www.molex.com/molex/products/listview.jsp" method="get">
+	            <p class="submit">
+					<font color="#2E3192" size="2"><b >Molex Search</b></font> 
+	                <label for="search-input">
+					<input id="search-input" type="text" name="query" class="text" placeholder="Enter Part No. or Keyword"/>
+					</label>
+	               	<input type="hidden" name="channel" value="Products" class="sl" >
+	                <input id="search-submit" type="submit" value="Molex Search" class="super normal button"/>
+	            </p>
+	        </form>
+        </center>
 		<!--Search End-->
 
 		<div class="clear"></div>
