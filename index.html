@@ -5,7 +5,10 @@
 	<link rel="stylesheet" type="text/css" media="screen"  href="./static/css/style.css" />
 	<link rel="shortcut icon" href="./static/img/favicon.ico" />
 
+<!-- Begin-->
+<!-- End-->
 
+<!--Fall Ball Begin-->
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
@@ -16,8 +19,11 @@
 			background-color: #000000;
 		}
 	</style>
+<!--Fall Ball End-->
 
+<!--Bird Begin-->
 
+<!--Bird End-->
 
 </head>
 <body>
@@ -34,28 +40,44 @@
 
 		<div class="sep"></div>
 		<div class="column">
-			<div class="column_title">NEWS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; </div>
+			<div class="column_title">NEWS &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; </div>
 			<ul class="nav">
 				<li><img src="./static/img/star.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.163.com/" target="_self">网易</a></li>
 			</ul>
 		</div>
 		<div class="column">
-			<div class="column_title">TECHNOLOGY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </div>
+			<div class="column_title">TECHNOLOGY &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  </div>
 			<ul class="nav">
 				<li><img src="./static/img/retweet.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://digg.com/news/technology/media/recent" target="_self">DIGG</a></li>
 			</ul>
+			<ul class="nav">
+				<li><img src="./static/img/retweet.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.ourdev.cn" target="_self">Ourdev</a></li>
+			</ul>
 		</div>
 		<div class="column">
-			<div class="column_title">OPEN SOURCE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </div>
+			<div class="column_title">OPEN SOURCE &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </div>
 			<ul class="nav">
 				<li><img src="./static/img/heart.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.oschina.net/" target="_self">开源中国</a></li>
 			</ul>
 		</div>
 		<div class="column">
-			<div class="column_title">FEED &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+			<div class="column_title">FEED &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
 			<ul class="nav">
 				<li><img src="./static/img/app.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;
 					<a href="http://xianguo.com/reader#PageMgr.goAllFeed(true)" target="_self">鲜果</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="sep"></div>
+		<div class="column">
+			<div class="column_title">NETWORK &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+			<ul class="nav">
+				<li><img src="./static/img/app.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;
+					<a href="http://u.115.com" target="_self">115</a>
+				</li>
+				<li><img src="./static/img/star.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;
+					<a href="http://www.thinkernote.com/login" target="_self">ThinkerNote</a>
 				</li>
 			</ul>
 		</div>
@@ -68,7 +90,17 @@
 			<form action="http://www.baidu.com/baidu" target="_self">
 				<input name=tn type=hidden value=baidu>
 				<input type="text" name=word id="baidu" class="sl" />
-				<input type="submit" value="Baidu  Search" class="super normal button" />
+				<input type="submit" value=" &nbsp;百 &nbsp;  &nbsp; &nbsp;度 &nbsp;" class="super normal button" />
+			</form>
+		</center>
+
+		<center>
+			<form target="_self" method="get" action="http://www.google.com.hk/search">
+				<input type="hidden" name="forid" value="1" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="hidden" name="hl" value="en-US" />
+				<input type="text" name="q" id="google" class="sl" />
+				<input type="submit" value="Google.HK" class="super normal button" />
 			</form>
 		</center>
 
@@ -78,7 +110,7 @@
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="hidden" name="hl" value="en-US" />
 				<input type="text" name="q" id="google" class="sl" />
-				<input type="submit" value="Google Search" class="super normal button" />
+				<input type="submit" value="Google.EN" class="super normal button" />
 			</form>
 		</center>
 
@@ -120,31 +152,17 @@
 
 		<div class="clear"></div>
 		<div class="sep"></div>
-
-
-
 	<div id="canvas"></div>
 
-	<script src="./js/protoclass.js"></script>
-	<script src='./js/box2d.js'></script>
+<!--Fall Ball Begin-->
+	<script src="./js_fall_ball/protoclass.js"></script>
+	<script src='./js_fall_ball/box2d.js'></script>
+	<script src='./js_fall_ball/Main.js'></script>
+<!--Fall Ball End-->
 
-	<script src='./js/Main.js'></script>
+<!--Bird Begin-->
 
-	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	try {
-	var pageTracker = _gat._getTracker("UA-86951-7");
-	pageTracker._trackPageview();
-	} catch(err) {}</script>
-
-
-
-
-
-
+<!--Bird End-->
 
 	</div>
 	<div id="Bottom">&copy; 2011-Long After, SPECIAL's Start Page<br />Powered by Pajoke</div>

@@ -67,7 +67,7 @@ function init() {
 
 function play() {
 
-	setInterval( loop, 1000 / 40 );
+	setInterval( loop, 1000 / 35 );
 }
 
 function reset() {
@@ -110,14 +110,14 @@ function onDocumentMouseDown() {
 	if(mouse.x < 450){
 		return false;
 	}
-	if(mouse.x > 1250) {
+	if(mouse.x > 1275) {
 		return false;
 	}
 
 	if(mouse.y < 30){
 		return false;
 	}
-	if(mouse.y > 400) {
+	if(mouse.y > 550) {
 		return false;
 	}
 
@@ -205,7 +205,7 @@ function onWindowDeviceOrientation( event ) {
 
 function createInstructions() {
 
-	var size = 200;
+	var size = 150;
 
 	var element = document.createElement( 'div' );
 	element.width = size;
@@ -234,7 +234,7 @@ function createInstructions() {
 
 	text = document.createElement( 'div' );
 	text.onSelectStart = null;
-	text.innerHTML = '<span style="color:' + theme[0] + ';font-size:32px;">Happy<br />Work, Happy<br />Day!</span><br />';
+	text.innerHTML = '<span style="color:' + theme[0] + ';font-size:24px;">Happy<br />Work, Happy<br />Day!</span><br />';
 	text.style.color = theme[1];
 	text.style.position = 'absolute';
 	text.style.left = '0px';
@@ -243,8 +243,8 @@ function createInstructions() {
 	text.style.textAlign = 'center';
 	element.appendChild(text);
 
-	text.style.left = ((200 - text.clientWidth) / 2) +'px';
-	text.style.top = ((200 - text.clientHeight) / 2) +'px';	
+	text.style.left = ((150 - text.clientWidth) / 2) +'px';
+	text.style.top = ((150 - text.clientHeight) / 2) +'px';	
 
 	var b2body = new b2BodyDef();
 
