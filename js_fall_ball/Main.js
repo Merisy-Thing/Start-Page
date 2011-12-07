@@ -92,9 +92,9 @@ function reset() {
 	bodies = [];
 	elements = [];
 
-	createInstructions();
+	//createInstructions();
 
-	for( i = 0; i < 3; i++ ) {
+	for( i = 0; i < 1; i++ ) {
 
 		createBall();
 
@@ -117,7 +117,7 @@ function onDocumentMouseDown() {
 	if(mouse.y < 30){
 		return false;
 	}
-	if(mouse.y > 550) {
+	if(mouse.y > 610) {
 		return false;
 	}
 
