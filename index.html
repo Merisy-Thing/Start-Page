@@ -43,6 +43,7 @@
 			<div class="column_title">NEWS &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; </div>
 			<ul class="nav">
 				<li><img src="./static/img/star.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="http://www.163.com/" target="_self">网易</a></li>
+				<li><img src="./static/img/retweet.png" align="absmiddle" style="padding-bottom: 3px;" />&nbsp;<a href="https://www.google.com.hk/" target="_self">Google</a></li>
 			</ul>
 		</div>
 		<div class="column">
@@ -130,6 +131,15 @@
 
 		<div class="clear"></div>
 		<div class="sep"></div>
+
+		<center>		
+			<form action="http://search.digikey.com/scripts/DkSearch/dksus.dll?KeywordSearch" method=get>
+				<input type=hidden name=vendor value=0>
+				<font color="#2E3192" size="2"><b>Digikey Search</b></font> 
+				<input type=text name=keywords size=32 maxlength=250 value="">
+				<input id=searchbutton type=submit value="Digikey Search" class="super normal button">
+			</form>
+		</center>
 
 		<center>
 		    <form name="frmSearch" method="post" action="http://www.alldatasheet.com/view.jsp" onsubmit="return InputCheck(frmSearch,1)">
