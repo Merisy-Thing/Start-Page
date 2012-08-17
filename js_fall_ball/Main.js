@@ -107,7 +107,7 @@ function reset() {
 function onDocumentMouseDown() {
 	isMouseDown = true;
 
-	if(mouse.x < 450){
+	if(mouse.x < 100){
 		return false;
 	}
 	if(mouse.x > 1275) {
@@ -117,7 +117,7 @@ function onDocumentMouseDown() {
 	if(mouse.y < 30){
 		return false;
 	}
-	if(mouse.y > 610) {
+	if(mouse.y > 710) {
 		return false;
 	}
 
